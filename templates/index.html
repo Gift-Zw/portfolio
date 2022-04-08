@@ -1,0 +1,458 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+
+<body class="theme-blue">
+
+  <!-- Back to top button -->
+  <div class="btn-back_to_top">
+    <span class="ti-arrow-up"></span>
+  </div>
+
+  <!-- Setting button -->
+  <div class="config">
+    <div class="template-config">
+      <!-- Settings -->
+      <div class="d-block">
+        <button class="btn btn-fab btn-sm" id="sideel" title="Settings"><span class="ti-settings"></span></button>
+      </div>
+    </div>
+    <div class="set-menu">
+      <p>Select Color</p>
+      <div class="color-bar" data-toggle="selected">
+        <span class="color-item bg-theme-red selected" data-class="theme-red"></span>
+        <span class="color-item bg-theme-blue" data-class="theme-blue"></span>
+        <span class="color-item bg-theme-green" data-class="theme-green"></span>
+        <span class="color-item bg-theme-orange" data-class="theme-orange"></span>
+        <span class="color-item bg-theme-purple" data-class="theme-purple"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="vg-page page-home" id="home" style="background-image: url({% static 'img/bg_image_1.jpg' %})">
+    <!-- Navbar -->
+    <div class="navbar navbar-expand-lg navbar-dark sticky" data-offset="500">
+      <div class="container">
+        <a href="" class="navbar-brand">Gift Mugaragumbo</a>
+        <button class="navbar-toggler" data-toggle="collapse" data-target="#main-navbar" aria-expanded="true">
+          <span class="ti-menu"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="main-navbar">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item active">
+              <a href="#home" class="nav-link" data-animate="scrolling">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link" data-animate="scrolling">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link" data-animate="scrolling">Projects</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link" data-animate="scrolling">Contact</a>
+            </li>
+          </ul>
+          <ul class="nav ml-auto">
+            <li class="nav-item">
+              <button class="btn btn-fab btn-theme no-shadow">En</button>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div> <!-- End Navbar -->
+    <!-- Caption header -->
+    <div class="caption-header text-center wow zoomInDown">
+      <h5 class="fw-normal">Welcome</h5>
+      <h1 class="fw-light mb-4">I'm <b class="fg-theme">Gift</b></h1>
+      <div class="badge">Web & Mobile Developer</div>
+    </div> <!-- End Caption header -->
+    <div class="floating-button"><span class="ti-mouse"></span></div>
+  </div>
+
+  <div class="vg-page page-about" id="about">
+    <div class="container py-5">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="img-place wow fadeInUp">
+            <img src="{% static 'img/cyber.jpeg' %}" alt="">
+          </div>
+        </div>
+        <div class="col-lg-6 offset-lg-1 wow fadeInRight">
+          <h1 class="fw-light">Gift Mugaragumbo</h1>
+          <h5 class="fg-theme mb-3">Web & Mobile Developer</h5>
+          <p class="text-muted">I am a full stack web developer. I use Django framework for web. I develop cross-platform apps using Flutter. I am also a machine learning and deep learning enthusiast. My main focus is on Computer Vision</p>
+          <ul class="theme-list">
+            <li><b>From:</b> Gweru, Zimbabwe</li>
+            <li><b>Lives In:</b> Harare, Zimbabwe</li>
+            <li><b>Age:</b> 21</li>
+            <li><b>Gender:</b> Male</li>
+          </ul>
+          <a href="https://drive.google.com/file/d/11HajOs3i4vA_VaraM6SazN7VMeHUR81U/view?usp=sharing" target="_blank">
+          <button class="btn btn-theme-outline">Download CV</button>
+            </a>
+        </div>
+      </div>
+    </div>
+    <div class="container py-5">
+      <h1 class="text-center fw-normal wow fadeIn">My Skills</h1>
+      <div class="row py-3">
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Web Development skills</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Python</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">70%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">HTML</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 88%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">90%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">CSS</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 71%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">97%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">JavaScript</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 62%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">82%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="px-lg-3">
+            <h4 class="wow fadeInUp">Mobile Dev</h4>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Dart</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 77%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">77%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">Flutter</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 78%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">82%</div>
+              </div>
+            </div>
+            <div class="progress-wrapper wow fadeInUp">
+              <span class="caption">UI/UX</span>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" style="width: 83%;" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">86%</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container pt-5">
+      <div class="row">
+        <div class="col-md-6 wow fadeInRight">
+          <h2 class="fw-normal">Education</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2020- Current</div>
+              <div class="details">
+                <h5>BSc in Computer Science </h5>
+                <small class="fg-theme">National University of Science and Technology</small>
+                <p>Studying towards a bachelors degree in Computer Science. I will be graduating in 2024</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2017</div>
+              <div class="details">
+                <h5>Ordinary Level</h5>
+                <small class="fg-theme">St Patricks High School</small>
+                <p>Completed my Ordinary level studies in 2017. Wrote 13 subjects and got 10 As and 3Bs</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2019</div>
+              <div class="details">
+                <h5>Advanced Level</h5>
+                <small class="fg-theme">Thornhill High School</small>
+                <p>I studies Pure Mathematics, Mechanical Mathematics, Physics and Chemistry. I got 16/20 points.</p>
+              </div>
+            </li>
+
+          </ul>
+        </div>
+        <div class="col-md-6 wow fadeInRight" data-wow-delay="200ms">
+          <h2 class="fw-normal">Experience</h2>
+          <ul class="timeline mt-4 pr-md-5">
+            <li>
+              <div class="title">2021- Current</div>
+              <div class="details">
+                <h5>Flutter </h5>
+                <small class="fg-theme">Udemy</small>
+                <p>Enrolled for the complete Flutter course on Udemy and completed it.</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2021</div>
+              <div class="details">
+                <h5>Web Development</h5>
+                <small class="fg-theme">freeCode Camp</small>
+                <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered</p>
+              </div>
+            </li>
+            <li>
+              <div class="title">2020</div>
+              <div class="details">
+                <h5>Python Programming</h5>
+                <small class="fg-theme">Udemy</small>
+                <p>Enrolled in the Udemy Python Programming course</p>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vg-page page-service">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Service</div>
+      </div>
+      <h1 class="fw-normal text-center wow fadeInUp">What can i do?</h1>
+      <div class="row mt-5">
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-desktop"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Web Development</h4>
+              <p>I make outstanding blogs and landing pages for individuals or company to boost advertisement </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-shopping-cart"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">ECommerce Sites</h4>
+              <p>Boost your business profits by getting an e commerce site so that users can easily purchase your products from home.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-eye"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">Android Apps</h4>
+              <p>I create android applications.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-4 col-xl-3">
+          <div class="card card-service wow fadeInUp">
+            <div class="icon">
+              <span class="ti-book"></span>
+            </div>
+            <div class="caption">
+              <h4 class="fg-theme">IOS Apps</h4>
+              <p>I create IOS apps for apple devices </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="vg-page page-funfact" style="background-image: url(../assets/img/bg_banner.jpg);">
+    <div class="container">
+      <div class="row section-counter">
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="62">10</h1>
+          <span>Clients</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="18">9</h1>
+          <span>Project Completed</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="6">3</h1>
+          <span>Project Ongoing</span>
+        </div>
+        <div class="col-md-6 col-lg-3 py-4 wow fadeIn">
+          <h1 class="number" data-number="59">6</h1>
+          <span>Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Portfolio page -->
+  <div class="vg-page page-portfolio" id="portfolio">
+    <div class="container">
+      <div class="text-center wow fadeInUp">
+        <div class="badge badge-subhead">Portfolio</div>
+      </div>
+      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <div class="gridder my-3">
+        {% for project in projects %}
+        <div class="grid-item apps wow zoomIn">
+          <div class="img-place">
+            <a href="{{ project.image.url }}">
+            <img src="{{ project.image.url }}" alt="">
+            </a>
+            <div class="img-caption">
+              <a href="{{ project.url }}">
+              <h5 class="fg-theme"></h5>
+              <p>{{ project.category }}</p>
+                </a>
+            </div>
+          </div>
+        </div>
+        {% endfor %}
+      </div> <!-- End gridder -->
+    </div>
+  </div> <!-- End Portfolio page -->
+
+  <!-- Testimonial -->
+  <div class="vg-page page-testimonial">
+    <div class="container">
+      <h1 class="text-center fw-normal wow fadeInUp">What Clients are Saying</h1>
+      <div class="row justify-content-center mt-5 wow fadeInUp">
+        <div class="col-md-9">
+          <div class="owl-carousel testi-carousel">
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="{% static 'img/testimonials/lizz.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">I have been Gift's client for 2 years now and he delivers reliable websites on time.</div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="{% static 'img/testimonials/lizz.jpg' %}" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Liz Nyamuda</h5>
+                        <span class="text-muted">Founder of Tambawashables</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="item">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="img-place">
+                    <img src="{% static 'img/testimonials/nevil.jpg' %}" alt="">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="caption">
+                    <div class="testi-content">Gift created my blog website. I am impressed by his web development skills and highly recommend him. </div>
+                    <div class="testi-info">
+                      <div class="thumb-profile">
+                        <img src="{% static 'img/testimonials/nevil.jpg' %}" alt="">
+                      </div>
+                      <div class="tagline">
+                        <h5 class="mb-0">Neville Moyana</h5>
+                        <span class="text-muted">Graphics Designer</span>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End testimonial -->
+
+  <!-- Footer -->
+  <div class="vg-footer" id="contact">
+    <h1 class="text-center">Cyber_ZW</h1>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 py-3">
+          <div class="footer-info">
+            <p>Where to find me</p>
+            <hr class="divider">
+            <p class="fs-large fg-white">National University of Science and Technology, Bulawayo</p>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Social Accounts</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><div class="icon">
+                <a href="https://wa.me/263776149765/?text=HelloGift"><span class="ti-whatsapp"> Whatsapp</span></a>
+                 </div>
+              </li>
+              <li><div class="icon">
+                <a href="https://twitter.com/cyber_zw"><span class="ti-twitter"> Twitter</span></a>
+                 </div>
+              </li>
+              <li><div class="icon">
+                <a href="https://www.facebook.com/gift.mugaragumbojunior"><span class="ti-facebook"> Facebook</span></a>
+                 </div>
+              </li>
+
+              <li><div class="icon">
+                <a href="https://www.linkedin.com/in/gift-munyaradzi-mugaragumbo-91bb46200"><span class="ti-linkedin"> LinkedIn</span></a>
+                 </div>
+              </li>
+              <li><div class="icon">
+                <a href="https://github.com/Gift-Zw"><span class="ti-github"> GitHub</span></a>
+                 </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="col-md-6 col-lg-3 py-3">
+          <div class="float-lg-right">
+            <p>Contact me</p>
+            <hr class="divider">
+            <ul class="list-unstyled">
+              <li><div class="icon">
+                <a href="mailto:gitmugaragumbojr@gmail.com">
+              <span class="ti-email">  Email</span></a>
+            </div></li>
+              <li>+263 776149765</li>
+              <li>+263 780073032</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="row justify-content-center mt-3">
+        <div class="col-12 mb-3">
+          <h3 class="fw-normal text-center">Subscribe</h3>
+        </div>
+        <div class="col-lg-6">
+          <form class="mb-3">
+            <div class="input-group">
+              <input type="text" class="form-control" placeholder="Email address">
+              <input type="submit" class="btn btn-theme no-shadow" value="Subscribe">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div> <!-- End footer -->
+
+
+
+
+</body>
+{% endblock content %}
