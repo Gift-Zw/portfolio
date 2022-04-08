@@ -1,5 +1,4 @@
-
-﻿asgiref
+asgiref
 astunparse
 certifi
 cloudinary
