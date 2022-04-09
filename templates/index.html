@@ -299,12 +299,12 @@
       <div class="text-center wow fadeInUp">
         <div class="badge badge-subhead">Portfolio</div>
       </div>
-      <h1 class="text-center fw-normal wow fadeInUp">See my work</h1>
+      <h1 class="text-center fw-normal wow fadeInUp">Projects completed</h1>
       <div class="gridder my-3">
         {% for project in projects %}
         <div class="grid-item apps wow zoomIn">
-          <div class="img-place">
-            <a href="{{ project.image.url }}">
+          <div class="img-place" data-src="{{ project.image.url }}" data-fancybox data-caption="<a href='{{ project.url }}> '<h5 class='fg-theme'>{{ project.name }}</h5> <p>{{ project.category }}</p></a>">
+            <a href="{{ project.url }}">
             <img src="{{ project.image.url }}" alt="">
             </a>
             <div class="img-caption">
